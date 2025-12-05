@@ -61,6 +61,7 @@ body {
   font-family: 'Figtree', sans-serif;
   min-height: 100%;
   display: flex;
+  flex-direction: column; /* impila verticalmente card + attribution */
   justify-content: center;
   align-items: center;
   background-color: var(--yellow);
