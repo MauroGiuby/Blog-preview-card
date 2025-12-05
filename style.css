@@ -13,6 +13,39 @@
   /* Più intuitivo di RGB: puoi regolare facilmente luminosità e saturazione senza calcoli complessi */
 }
 
+/* ============================================================
+   RESET UNIVERSALE DEL BOX MODEL
+   ------------------------------------------------------------
+   Selettori utilizzati:
+   - *            → seleziona tutti gli elementi
+   - *::before    → seleziona tutti i pseudo-elementi "before"
+   - *::after     → seleziona tutti i pseudo-elementi "after"
+
+   Proprietà applicata:
+   - box-sizing: border-box;
+
+   SIGNIFICATO:
+   Normalmente, in CSS, la proprietà "width" e "height" di un elemento
+   NON includono padding e border (box-sizing: content-box, valore di default).
+   Questo può creare confusione nei calcoli di layout.
+
+   Con "border-box":
+   - width e height includono anche padding e border.
+   - Il contenuto interno si ridimensiona automaticamente per rispettare
+     le dimensioni dichiarate.
+   - È molto più intuitivo e prevedibile per layout complessi.
+
+   VANTAGGI:
+   1. Consistenza → tutti gli elementi rispettano lo stesso modello di calcolo.
+   2. Semplificazione → non devi sommare manualmente padding + border.
+   3. Responsività → più facile adattare layout fluidi e con Flexbox/Grid.
+   4. Manutenibilità → riduce bug e differenze tra browser.
+
+   BEST PRACTICE:
+   Applicare "box-sizing: border-box" globalmente è considerato uno
+   standard moderno nei reset CSS (es. Normalize.css).
+   ============================================================ */
+
 *,
 *::before,
 *::after {
@@ -20,12 +53,13 @@
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Figtree', sans-serif;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,27 +67,36 @@ body {
 }
 
 .card {
-  width: 375px;
+  margin: 24px;
+  max-width: 375px;
   background-color: var(--white);
   border-radius: 18px;
   padding: 24px;
-  box-shadow: 5px 5px 0 black;
+  box-shadow: 8px 8px 0 black;
+  border: 1px solid var(--gray-950);
 }
 
 .blog img {
+  display: block;
   width: 100%;
   border-radius: 5px;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 24px 0;
+  gap: 12px;
 }
 
 .category {
   background-color: var(--yellow);
+  font-size: var(--yellow);
   width: 82px;
   height: 29px;
   border-radius: 4px;
+  padding: 4px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +131,7 @@ body {
 
 .author img {
   width: 32px;
+  height: 32px;
 }
 
 .author h4 {
