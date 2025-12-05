@@ -1,13 +1,94 @@
-:root{
---yellow: hsl(47, 88%, 63%)
---white: hsl(0, 0%, 100%)
---gray 500: hsl(0, 0%, 42%)
---gray 950: hsl(0, 0%, 7%)
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* ============================
+     Palette di colori globali
+     Definite in HSL per garantire:
+     - Consistenza cromatica su tutto il progetto
+     - Facilità di modifica (Hue, Saturation, Lightness)
+     - Accessibilità e contrasto gestibile
+     ============================ */
+  --yellow: hsl(47, 88%, 63%);   /* Giallo brillante: sfondi o accenti */
+  --white: hsl(0, 0%, 100%);     /* Bianco puro: sfondi o testi su colori scuri */
+  --gray-500: hsl(0, 0%, 42%);   /* Grigio medio: testi secondari, bordi */
+  --gray-950: hsl(0, 0%, 7%);    /* Quasi nero: testi principali, forte contrasto */
+  /* Più intuitivo di RGB: puoi regolare facilmente luminosità e saturazione senza calcoli complessi */
 }
+
 
 body {
   margin: 0;
-  background-color: hsl(47, 88%, 63%);
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+.card {
+  width: 375px;
+  background-color: var(--white);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 5px 5px 0 black;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.content {
+  margin: 24px 0;
+}
+
+.category {
+  background-color: var(--yellow);
+  width: 82px;
+  height: 29px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h3 {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.p {
+  color: var(--gray-500);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 32px;
+}
+
+.author h4 {
+  font-size: 14px;
+  font-weight: 800;
 }
 
 
@@ -16,6 +97,9 @@ body {
 
 
 
+
+
+/*
 .outfit-500 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -29,3 +113,4 @@ body {
   font-weight: 800;
   font-style: normal;
 }
+*/
