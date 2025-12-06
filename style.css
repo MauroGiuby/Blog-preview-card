@@ -58,7 +58,8 @@ body {
   font-family: 'Figtree', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  min-height: 100%;
+  height: 100vh; /* prende l’altezza esatta del viewport, 
+  quindi Flexbox può centrare perfettamente la card al centro dello schermo */
   display: flex;
   flex-direction: column; /* impila verticalmente card + attribution */
   justify-content: center;
@@ -69,7 +70,7 @@ body {
 .card {
   margin: 24px;
   max-width: 350px;
-  min-width: 320px;
+  min-width: 320px; /* per evitare @media query */
   background-color: var(--white);
   border-radius: 18px;
   padding: 20px;
