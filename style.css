@@ -52,13 +52,13 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   min-height: 100%;
   display: flex;
   flex-direction: column; /* impila verticalmente card + attribution */
@@ -77,16 +77,17 @@ body {
   border: 1px solid var(--gray-950);
 }
 
-.blog img {
+.blog_image {
   display: block;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: 500;
   margin: 24px 0;
   gap: 12px;
 }
@@ -110,8 +111,9 @@ body {
 }
 
 .h2 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .h1 {
