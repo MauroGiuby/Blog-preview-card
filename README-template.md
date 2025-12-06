@@ -108,3 +108,42 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+
+
+# Blog Preview Card
+
+## 📖 Descrizione / Description
+IT:  
+Questo progetto è una **card di anteprima blog** sviluppata con **HTML5 e CSS3**, ispirata a una challenge di [Frontend Mentor](https://www.frontendmentor.io).  
+La card mostra un’immagine, una categoria, una data di pubblicazione, un titolo, un breve testo descrittivo e l’autore.  
+Il design è centrato nello schermo, con palette cromatica definita in HSL per garantire consistenza e accessibilità.
+
+---
+
+## 🎨 Tecnologie / Technologies
+- HTML5 semantic structure
+- CSS3 (Flexbox, inline-flex, box-shadow, border-radius)
+- Google Fonts (Figtree)
+- HSL color palette for easy adjustments
+
+---
+
+## ⚙️ Funzionalità / Features
+- Card centrata verticalmente e orizzontalmente con Flexbox
+- Ombra netta e bordo scuro per effetto editoriale bold
+- Categoria evidenziata con sfondo giallo compatto
+- Tipografia calibrata per gerarchia visiva (`h1`, `h2`, `p`)
+- Responsive fino a una larghezza minima (320px)
+
+---
+
+## 🚀 Istruzioni / Instructions
+IT:  
+1. Clona la repository o scarica i file.  
+2. Apri `index.html` in un browser moderno.  
+3. Modifica `style.css` per personalizzare colori, spaziature o tipografia.  
+
+---
+
+## 📂 Struttura / Structure
