@@ -108,7 +108,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 8px 12px;
-  margin-block: 6px 0;
+  margin-block: 12px 0;
 }
 
 h2 {
@@ -120,6 +120,7 @@ h2 {
 h1 {
   font-size: 24px;
   font-weight: 800;
+  margin: 2px 0;
 }
 
 p {
@@ -148,27 +149,3 @@ p {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
-
-
-
-/*
-.outfit-500 {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.outfit-800 {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-*/
