@@ -68,12 +68,17 @@ body {
 
 .card {
   margin: 24px;
-  max-width: 375px;
+  max-width: 350px;
+  min-width: 320px;
   background-color: var(--white);
   border-radius: 18px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: 8px 8px 0 black;
+  /* Ombra netta spostata di 8px a destra e 8px in basso, senza sfumatura. 
+  Effetto grafico deciso, quasi fumettistico. */
   border: 1px solid var(--gray-950);
+  /* Bordo sottile e scuro (quasi nero) che definisce i contorni della card. 
+  Rafforza contrasto e leggibilità. */
 }
 
 .blog_image {
@@ -87,8 +92,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   font-weight: 500;
-  margin: 24px 0;
-  gap: 12px;
+  margin: 10px 0;
+  gap: 4px;
 }
 
 .category {
@@ -116,7 +121,7 @@ h2 {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
 }
 
